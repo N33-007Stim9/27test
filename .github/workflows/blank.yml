@@ -34,4 +34,5 @@ jobs:
           registry: ghcr.io
           username: ${{ githup.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      - run: docker pull
+      - run: docker pull ghcr.io/whymelive/puthot-app:latest 
+      - run: docker run ghcr.io/whymelive/puthot-app:latest
