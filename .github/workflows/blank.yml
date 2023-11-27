@@ -32,7 +32,7 @@ jobs:
         uses: docker/login-acion@v4
         with:
           registry: ghcr.io
-          username: ${{ githup.actor }}
+          username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
       - run: docker pull ghcr.io/whymelive/puthot-app:latest 
       - run: docker run ghcr.io/whymelive/puthot-app:latest
