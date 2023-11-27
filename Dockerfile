@@ -1,4 +1,4 @@
-FROM Python
+FROM python
 WORKDIR /app
 COPY main.py .
-ENTRYPOINT ["Puthon "," main.py"]
+ENTRYPOINT ["python "," main.py"]
