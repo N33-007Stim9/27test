@@ -19,7 +19,7 @@ jobs:
         uses: Docker/login-action@v4
         with:
           registry: ghcr.io
-          username: ${{ githup.actor }}
+          username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
       - run: docker build -t ghcr.io/whymelive/puthot-app:latest .
       - run: docker push ghcr.io/whymelive/puthot-app:latest .
