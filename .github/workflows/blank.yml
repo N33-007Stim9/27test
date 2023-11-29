@@ -34,5 +34,5 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      - run: docker pull ghcr.io/whymelive/puthot-app:latest 
-      - run: docker run ghcr.io/whymelive/puthot-app:latest
+      - run: docker pull ghcr.io/whymelive/puthot-app:latest .
+      - run: docker run ghcr.io/whymelive/puthot-app:latest .
